@@ -94,6 +94,9 @@ public class Graph : MonoBehaviour
 
 	    GameObject go = Instantiate(nodepf, nodeOrigin, Quaternion.identity);
 	    n = go.GetComponent<Node>();
+
+		n.tag = "node";
+
 	    n.transform.parent = transform;
 	    n.SetEdgePrefab(edgepf);
 		if (firstNode) {
